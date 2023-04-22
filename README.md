@@ -8,3 +8,4 @@ We aim to develop an image classification model to perform live streaming sign l
 2. Dynamically extracted the data from Kaggle, labelled videos using JSON config, created frames for multiple videos related to action - Kratika
 3. Ability to extract landmark and draw landmark dynamically for further usecase, created model pipeline with mediapipe HandLandmarks - Daksh
 4. Landmark dataset creation - Jaydeep
+5. LSTM - Kratika
