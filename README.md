@@ -13,3 +13,5 @@ Earlier approaches at hand gesture recognition included following steps: hand se
 3. Ability to extract landmark and draw landmark dynamically for further usecase, created model pipeline with mediapipe HandLandmarks - Daksh
 4. Landmark dataset creation - Jaydeep
 5. LSTM - Kratika
+
+Link to Data - (https://drive.google.com/drive/folders/1s-FU0QDrfY3GNw6dvZncJWxrz58zjy6u?usp=share_link)
