@@ -1,6 +1,6 @@
 # HandGesture_Recognition_Modeling
 ### Aim:
-We aim to develop an image classification model to perform live streaming sign language recognition which converts sign language into text format using image recognition techniques through DNN model and deliver text phrases to indicate context in the live video. To test the trained model, we plan to use the confusion matrix as a performance matrix where we would evaluate F1, Recall and Precision scores to determine model reliability and validate the results with cross validation scores using GridSearchCV. Using OpenCV to create the DNN network is our goal.
+The goal of this project is to build a hand gesture recognition system using OpenCV, Google’s MediaPipe, and an LSTM model. The goal of the system is to recognize hand gestures, such as "hello" and "goodbye," from video clips. The first step in the system is to record short video clips of 2 seconds in which a person performs the action. OpenCV is subsequently leveraged to extract images from the video clips at 15 frames per second. Landmarks are extracted from these images using the MediaPipe. These landmarks are coordinates of different location on the hand that can be used to identify the gesture. The extracted landmarks are then passed to an LSTM, which is a type of neural network that can learn long-term dependencies. The LSTM is trained on a dataset of images and their corresponding labels. The labels indicate which gesture is being performed in each image. Once the LSTM is trained, it can be used to recognize hand gestures from new images. The hand gesture recognition system that we built is able to recognize a variety of hand gestures with a reasonable degree of accuracy.
 
 ### Literature Survey
 Earlier approaches at hand gesture recognition included following steps: hand segmentation, hand frame tracking, feature extraction, classification. 
@@ -8,10 +8,6 @@ Earlier approaches at hand gesture recognition included following steps: hand se
 2. Ankita Wadhawan and Parteek Kumar proposed a sign language recognition system in which the training process is based on convolutional neural networks, where preprocessed sign images are inputted into the classifier to assign them to the appropriate categories. To train the classifier, a dataset containing various ISL (Indian Sign Language) gestures was utilized. The system achieved high training and validation accuracy, specifically 99.76% and 98.35% respectively, using the RMSProp optimizer. Furthermore, they observed that the SGD optimizer surpasses the performance of Adam, RMSProp, and other optimizers, achieving training and validation accuracy of 99.90% and 98.70% respectively, on a grayscale image dataset. 
 3. The paper used different architectures for training a hand gesture recognition system. These include 3D convolutional neural networks (I3D), convolutional networks coupled with recurrent neural networks, and proposed a novel method called temporal graph convolutional network (TGCN). Trained on a dataset of 100 gestures, they achieved a 5 fold cross validation accuracy of 84% using I3D, 55% using VGG-GRU, and 79% using the TGCN.
 ### Status 
-1. Divided single video clip into optimal frames 0.067 setting. - Jaydeep
-2. Dynamically extracted the data from Kaggle, labelled videos using JSON config, created frames for multiple videos related to action - Kratika
-3. Ability to extract landmark and draw landmark dynamically for further usecase, created model pipeline with mediapipe HandLandmarks - Daksh
-4. Landmark dataset creation - Jaydeep
-5. LSTM - Kratika
+
 
 Link to Data - (https://drive.google.com/drive/folders/1s-FU0QDrfY3GNw6dvZncJWxrz58zjy6u?usp=share_link)
