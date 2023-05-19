@@ -25,5 +25,8 @@ Currently, the LSTM Model trained in this project can be improvised with increas
 
 Moving forward, we can use the same implementation developed in this project and predict actions and words for a long video clip which represents a sentence. This will result into predictions of verbs and nouns. The objective should be to collect all these predictions, apply semantic analysis on it, summarize the data, and feed it into a Natural Language Generation architecture to form a sensible sentence. In this way, we are converting ASL actions into text. After this point, we can use text-to-speech algorithm to give voice to the user who actually doesn’t possess ability to speak. This generated sentence can also be used as a subtitle text for ASL video. 
 
+### Final Application Code
+Final application lies in directory - HGR_Application_F
+Kindly navigate there.
 
 
